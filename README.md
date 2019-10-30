@@ -68,7 +68,6 @@ remote: Resolving deltas: 100% (2/2), completed with 1 local object.
 To https://github.com/andrewroe/andrewroe.github.io
    984abc4..f504145  master -> master
 
-------------------------------------------------------------------------------------
 In summary, the commands were:
 cd ~andrewroe/Documents/Sandboxes
 git clone https://github.com/andrewroe/andrewroe.github.io
@@ -82,5 +81,5 @@ git add .
 git commit -m "updating README.md with notes of steps taken to utilize github."
 git push
 git pull origin master
-------------------------------------------------------------------------------------
 
+End of summary
