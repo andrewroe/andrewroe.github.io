@@ -69,17 +69,29 @@ To https://github.com/andrewroe/andrewroe.github.io
    984abc4..f504145  master -> master
 
 In summary, the commands were:
+
 cd ~andrewroe/Documents/Sandboxes
+
 git clone https://github.com/andrewroe/andrewroe.github.io
+
 pushd andrewroe.github.io/  (I use pushd rather than cd)
+
 edit changes to file(s)
+
 git pull https://github.com/andrewroe/andrewroe.github.io
+
 git diff
+
  or
+
 git diff .
+
 git add .
+
 git commit -m "updating README.md with notes of steps taken to utilize github."
+
 git push
+
 git pull origin master
 
 End of summary
