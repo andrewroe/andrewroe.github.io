@@ -1,0 +1,194 @@
+/*This is the CSS file for Pacific Heights Trails */
+*{
+	box-sizing:border-box;
+}
+
+header {
+	background-color:white;
+	color:black;
+	height: 72px;
+}
+
+body {
+	background-color: #FFFFFF;
+	font-family: 'Public Sans', sans-serif;
+	color: #666666;
+}
+
+
+main {
+	background-color: white;
+	max-width: 1200px;
+	/*
+	margin:0 auto;
+	*/
+	margin: 32px;
+}
+
+h1 {
+	line-height: 200%;
+	background-repeat: no-repeat;
+	background-position: right;
+	padding-left: 32px;
+	margin-bottom: 0;
+	height: 72px;
+}
+h2 {
+	color: #3399cc;
+	font-family: Georgia, serif;
+}
+h3 {
+	color: #000033;
+}
+
+video {
+	margin: 2em;
+	float: right;
+}
+
+dt {
+	font-weight: bold;
+	color: #000033;
+}
+
+table {
+	border: 1px solid #3399cc;
+	margin: 0 auto;
+	width: 90%;
+	border-collapse: collapse;
+}
+td, th {
+	padding: 5px;
+	border: 1px solid #3399cc;
+	text-align: center;
+}
+tr:nth-of-type(even) {
+	background-color: #F5FAFC;
+}
+
+label {
+	float: left;
+	width: 8em;
+	padding-right: 1em;
+}
+input, textarea {
+	margin-bottom: 1em;
+	display: block;
+}
+
+/*
+	margin-left: 170px;
+*/
+footer {
+	margin-left: auto;
+	background-color: white;
+	/*
+	color:white;
+	background-color: #506483;
+	padding:15px;
+	margin:0;
+	display:block;
+	*/
+	font-size: 1.0em;
+	font-style: italic;
+	text-align: center;
+	padding: 5px 5px 5px 5px;
+}
+
+.icons .fa{
+	font-size: 5em;
+	
+}
+
+.myname {
+	font-size: 1.2em;
+	color: #000033;
+}
+
+.leftfloat {
+	float: left;
+	margin: 1em;
+}
+
+.clear {
+	clear: both;
+}
+
+#mySubmit {
+	display: block;
+	margin-left: 10em;
+	background-color: lightgrey;
+}
+
+/*
+home, contact, etc,
+	background-image: url(images/phipi_cropped.png);
+	margin-left: auto;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 700px;
+
+*/
+
+#mobile {
+	display: none;
+}
+
+
+@media only screen and (max-width: 1024px){
+	 body{
+		margin:0;
+		padding:0;
+		background-image:none;
+	}
+	#wrapper {
+		width: auto;
+		min-width: 0;
+		box-shadow: none;
+	}
+	h1 {
+		margin: 0;
+	}
+
+
+	main {
+		margin-left: 0;
+		padding: 1em;
+		font-size: 90%;
+	}
+
+	footer {
+		margin: 0;
+	}
+
+}
+
+@media only screen and (max-width: 768px){
+	/*Media queries for smartphones go here */
+	main {
+		padding: 0.1em 0.6em 0.1em 0.4em;
+	}
+	#homehero,
+	#yurthero,
+	#trailhero {
+		display: none;
+	}
+
+	h1 {
+		font-size: 1.5em;
+		height: 100%;
+		padding-left: 0.3em;		
+	}
+
+/*	border-bottom: 1px #330000 solid; */
+	footer {
+		padding: 0;
+	}
+	#desktop{
+		display:none;
+	}
+	#mobile{
+		display:inline;
+	}
+}
+
