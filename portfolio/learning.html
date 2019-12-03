@@ -18,29 +18,32 @@
 		<script>
 			window.onload=function() {
 
-				var chart1 = new CanvasJS.Chart("languagesContainer", 
+				var chart1 = new CanvasJS.Chart("languagesGoal", 
 					{title:{text: "Skills Rating - languages"},
 					data: [{
 						type: "column",
 						dataPoints: [
-							{ label: "HTML/CSS", y: 25 },
-							{ label: "PHP", y: 10 },
-							{ label: "JavaScript", y: 7 },
-							{ label: "Java", y: 2 },
-							{ label: "JSP", y: 1 }
+							{ label: "HTML/CSS", y: 90 },
+							{ label: "PHP", y: 75 },
+							{ label: "JavaScript", y: 75 },
+							{ label: "Java", y: 75 },
+							{ label: "JSP", y: 75 },
+							{ label: "Python", y: 50 }
 						]
 					}]
 				});
 
-                var chart2 = new CanvasJS.Chart("toolsContainer", 
+                var chart2 = new CanvasJS.Chart("toolsGoal", 
                     {title:{text: "Skills Rating - Tools"},
                     data: [{
        					type: "column",
                         dataPoints: [
-                        	{ label: "Sublime", y: 20 },
-                        	{ label: "Vscode", y: 5 },
-                            { label: "Eclipse", y: 3 },
-                            { label: "Selenium", y: 1 }
+                        	{ label: "Sublime", y: 80 },
+                        	{ label: "Vscode", y: 75 },
+                            { label: "Eclipse", y: 75 },
+                            { label: "JSfiddle", y: 50 },
+                            { label: "git", y: 50 },
+                            { label: "Selenium", y: 40 }
                         ]
                     }]
                 });
@@ -87,7 +90,6 @@
 				</ul>
 			</div>
 		</nav>
-
 		
 		<main>
 			<div class="container-fluid">
@@ -101,7 +103,7 @@
 						</p>
 
 						<p> Some of my learning goals have already been mentioned in my "skills" page. That is because, I believe I've achieved some level of skill with those. But I'm relisting them here, because they are skills that I want to learn to be better at.
-						<p>
+						</p>
 					</div>
 
 					<div class="col-sm-8">		
@@ -111,20 +113,23 @@
 					</div>
 				</div>
 
+
 				<div class="row">
 					<div class="col-sm-4">
 						<h2>Language Skill Goals</h2>
 
-							<p>My goals for learning more about certain computer languages are diagramed at right. Remember, this shows the goal, rather than what currently is true.
-							</p>
-						</div>
+						<p>My goals for learning more about certain computer languages are diagramed at right. Remember, this shows the goal, rather than what currently is true.
+						</p>
+					</div>
 
 					<div class="col-sm-8">	
-						<p>Languages Skills chart. </p>
+						<p>Languages Goal chart. </p>
 
-						<div id="languagesContainer" style="height: 300px; width: 100%;"></div>
+						<div id="languagesGoal" style="height: 300px; 
+							width: 100%;"></div>
 					</div>
 				</div>
+
 				<br>
 
 				<div class="row">
@@ -136,39 +141,46 @@
 					</div> 
 
 					<div class="col-sm-8">
-						<p>Tools Skills chart. </p>
+						<p>Tools Goal chart. </p>
 
-						<div id="toolsContainer" style="height: 300px; width: 100%;"></div>
+						<div id="toolsGoal" style="height: 300px; 
+							width: 100%;"></div>
 					</div>
 				</div>
 
 			</div>
-			
+
 			<br>
+
 		</main>
 
 		<footer>
-			
-			<div class="row icons">
-              <div class="col-sm-4" >
-                  <a href="https:/andrewroe.github.io">
-                    <i class="fa fa-github" aria-hidden="true"></i>
-                    <h4>Follow me on github</h4>
-                   </a>
-                </div>
-                <div class="col-sm-4" >
-                  <a href="https://linked.com">
-                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                    <h4>Connect on Linked In</h4>
-                   </a>
-                </div>
-                <div class="col-sm-4" >
-                  <a href="mailto:cx5314mw@go.minnstate.edu">
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                    <h4>Email Me</h4>
-                   </a>
-                </div>
-            </div>
+			<div class="container-fluid">
+				<div class="row icons">
+              		<div class="col-sm-4" >
+                 		<a href="https:/andrewroe.github.io">
+                    	<i class="fa fa-github" aria-hidden="true"></i>
+                    	<h4>Follow me on github</h4>
+                  		</a>
+                	</div>
+
+                	<div class="col-sm-4" >
+                 		<a href="https://linked.com">
+                    	<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    	<h4>Connect on Linked In</h4>
+                  		</a>
+                	</div>
+
+                	<div class="col-sm-4" >
+                 		<a href="mailto:cx5314mw@go.minnstate.edu">
+                    	<i class="fa fa-envelope" aria-hidden="true"></i>
+                    	<h4>Email Me</h4>
+                  		</a>
+                	</div>
+
+            	</div>
+
+        	</div>
 
 			&copy;Copyright Andrew L Roe<br>
 
