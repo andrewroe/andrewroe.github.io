@@ -8,16 +8,7 @@ header {
 	color:black;
 	height: 72px;
 }
-/*
-	margin-left: 170px;
-*/
-/*
-	color:white;
-	background-color: #506483;
-	padding:15px;
-	margin:0;
-	display:block;
-*/
+
 footer {
 	margin-left: auto;
 	background-color: LightBlue;
@@ -27,10 +18,9 @@ footer {
 	padding: 5px 5px 5px 5px;
 }
 
-nav navbar {
+.my-nav-color {
 	background-color: LightBlue;
 }
-
 
 body {
 	background-color: #FFFFFF;
