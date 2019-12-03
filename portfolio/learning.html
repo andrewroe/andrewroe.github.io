@@ -11,7 +11,44 @@
 		<link href="https://fonts.googleapis.com/css?family=Public+Sans&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-		<link rel="stylesheet" href="portfolio.css">	
+		<link rel="stylesheet" href="portfolio.css">
+
+		<script>
+			window.onload=function() {
+
+				var chart1 = new CanvasJS.Chart("languagesContainer", 
+					{title:{text: "Skills Rating - languages"},
+					data: [{
+						type: "column",
+						dataPoints: [
+							{ label: "HTML/CSS", y: 25 },
+							{ label: "PHP", y: 10 },
+							{ label: "JavaScript", y: 7 },
+							{ label: "Java", y: 2 },
+							{ label: "JSP", y: 1 }
+						]
+					}]
+				});
+
+                var chart2 = new CanvasJS.Chart("toolsContainer", 
+                    {title:{text: "Skills Rating - Tools"},
+                    data: [{
+       					type: "column",
+                        dataPoints: [
+                        	{ label: "Sublime", y: 20 },
+                        	{ label: "Vscode", y: 5 },
+                            { label: "Eclipse", y: 3 },
+                            { label: "Intellij", y: 2 },
+                            { label: "Selenium", y: 1 }
+                        ]
+                    }]
+                });
+                            
+			chart1.render();
+			chart2.render();
+			}
+		</script>
+	
 	</head>
 
 	<body>
@@ -42,6 +79,8 @@
 					<li><a class="hav-item"><a class="nav-link"
 						href="aboutme.html">About Me</a></li>
 					<li><a class="hav-item"><a class="nav-link"
+						href="resume.html">Resume</a></li>
+					<li><a class="hav-item"><a class="nav-link"
 						href="fun.html">Fun</a></li>
 				</ul>
 			</div>
@@ -54,6 +93,30 @@
 
 			<p> I believe that particularily in the computer world and maybe in life in general, constant learning is necessary. It should always be a goal, even if not specifically mentioned.
 			</p>
+
+			<p> I'm dividing my learning skills into 2 catagories; Languages and Tools.
+			</p>
+
+			<h3>Language Skills</h3>
+
+			<p>I think it is helpful if I rate my progress and familiarity with each Language skill.
+			</p>
+			<p>Languages Skills chart. </p>
+
+			<div id="languagesContainer" style="height: 300px; width: 100%;"></div>
+			<br>
+			<br>
+
+			<h3>Tools Familiarity and Skills</h3>
+
+			<p>My rating of these is: 
+			</p>
+
+			<p>Tools Skills chart. </p>
+
+			<div id="toolsContainer" style="height: 300px; width: 100%;"></div>
+			<br>
+			<br>
 
 			<span class="myname">Andrew Roe</span><br>
 			256 Spring Street<br>
@@ -96,5 +159,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+		<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 	</body>
 </html>

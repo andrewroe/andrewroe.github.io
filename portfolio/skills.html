@@ -22,12 +22,15 @@
 						type: "column",
 						dataPoints: [
 							{ label: "C/C++", y: 90 },
-							{ label: "Perl", y: 50 },
 							{ label: "BAL", y: 80 },
-							{ label: "bourne shell", y: 45 },
 							{ label: "bash shell", y: 55 },
+							{ label: "Perl", y: 50 },
+							{ label: "bourne shell", y: 45 },
+							{ label: "HTML/CSS", y: 25 },
 							{ label: "Python", y: 20 },
-							{ label: "Ruby", y: 10 }
+							{ label: "PHP", y: 15 },
+							{ label: "JavaScript", y: 7 },
+							{ label: "Ruby", y: 5 }
 						]
 					}]
 				});
@@ -39,8 +42,8 @@
 						type: "column",
 						dataPoints: [
 							{ label: "SCSI", y: 50 },
-                            { label: "Escon/Block Mux", y: 25 },
-                            { label: "TCP/IP", y: 35 }
+							{ label: "TCP/IP", y: 35 },
+                            { label: "Escon/Block Mux", y: 25 }
 						]
 					}]
 				});
@@ -64,15 +67,17 @@
                     data: [{
        					type: "column",
                         dataPoints: [
-                            { label: "Subversion/SVN", y: 50 },
+                            { label: "vi/vim", y: 90 },
+                            { label: "Subversion/SVN", y: 70 },
                             { label: "CVS", y: 60 },
-                            { label: "Git", y: 15 },
-                            { label: "vi/vim", y: 80 },
-                            { label: "gdb", y: 30 },
-                            { label: "Jenkins", y: 20 },
-                            { label: "Wiki", y: 25 },
                             { label: "Word", y: 40 },
+                            { label: "gdb", y: 35 },
                             { label: "Excel", y: 30 },
+                            { label: "Wiki", y: 25 },
+                            { label: "Jenkins", y: 20 },
+                            { label: "Git", y: 15 },
+                            { label: "Eclipse", y: 10 },
+                            { label: "Vscode", y: 10 },
                             { label: "Puppet", y: 10 }
                         ]
                     }]
@@ -94,8 +99,7 @@
 				height="56" width="96">Andrew Roe - Skills</h1>
 		</header>
 
-
-		<nav class="navbr navbar-expand-sm navbar-light-gray bg-light">
+		<nav class="navbr navbar-expand-sm navbar-light bg-light">
 			<button class="navbar-toggler" thpe="button" data-toggle="collapse"
 				data-target="#navbarSupportedContent"
 				aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -116,6 +120,8 @@
 					<li><a class="hav-item"><a class="nav-link"
 						href="aboutme.html">About Me</a></li>
 					<li><a class="hav-item"><a class="nav-link"
+						href="resume.html">Resume</a></li>
+					<li><a class="hav-item"><a class="nav-link"
 						href="fun.html">Fun</a></li>
 				</ul>
 			</div>
@@ -129,32 +135,95 @@
 			<p> Under Construction: Here I hope to describe professional skills I have and computing tools I've been exposed to. The level of skill and exposure to tools is of course varied. I intend here to rate myself on those skills and tool familiarity. 
 			</p>
 
-			<p> I'm dividing my computer skills into 4 catagories; Languages, Protocols, Platforms, and Tools.
+			<p> I'm dividing my computer skills into 4 catagories; Languages, Protocols, Platforms, and Tools. I used CanvasJS to create bar charts in this document to help show the rating of each of my skills. In all cases, my rating is based on a scale of 0 to 100. But each chart uses levels of twenties, e.g. 0-20, 20-40, etc. Thus if the highest rating for a given skill is 65 in some catagory, the chart will only go up to 80. I'm pretty much going to never rate myself at 100 in skill level for anything. There is surely some area of improvement in everything we do in life. In fact it is hard for me to really define well what the skill level is sometimes. I'm mostly trying to convey a relative weighting for each skill. Lower skill ranked things are certainly going to be candidates for me to improve upon with additional training and self-learning. 
 			</p>
 
-			<h2>Language Skills</h2>
+			<h3>Language Skills</h3>
 
-			<p>I've listed a number of languages I've used in my resume. Some have been extensive usage and some exposure and everything in between. So I think it is helpful if I rate my familiarity with each Language skill.
+			<p>I've listed a number of languages I've used in my resume. Some have been extensively used and some I've only lightly been exposured to and everything in between. So I think it is helpful if I rate my familiarity along with a notion of my skill level with each Language skill.
 			</p>
 			<p>Languages Skills chart. </p>
 
 			<div id="languagesContainer" style="height: 300px; width: 100%;"></div>
+			<br>
+			<br>
+			<h4>C/C++</h4>
+			<p>I'm very experienced with C code and to a lessor degree C++. But it makes sense to lump them into one language skill. Over many projects and with several employers, I've written, tested and released ten's of thousands of lines of C code.
+			</p>
 
-			<h2>Protocol Familiarity Skills</h2>
+			<h4>BAL</h4>
+			<p>Basic asembly language (BAL is a 32-bit assembly language) is where I started out. I loved working with assembly code. But that was another era. I've rated my skill level with BAL lower than C/C++ only because it has been many years since when I did a ton of BAL coding.
+			</p>
+
+			<h4>bash shell</h4>
+			<p>If you've been a Unix/Linux/MacOS user for very long, it would be hard to not be somewhat familiar with the bourne shell and other shells. My preference is to use the bash shell rather than the bourne shell. That is what I set up in my user profile to be used on start up. I've seen some pretty large and complex bash shell programs. I've never had to create a big one from scratch, just a number of small handy ones. I rate myself to be about average skill, relative to many others, with this shell.
+			</p>
+
+			<h4>Perl</h4>
+			<p>I had a lot of fun a while back creating a fairly large Perl based test framework that ran as a CGI script. That constitutes the bulk of my Perl experience. With a Perl debugger it makes it pretty easy to slough threw most any problem. Python really seems to have displaced Perl. But I still think Perl knowledge is a good thing to have in one's repertoire. 
+			</p>
+
+			<h4>bourne shell</h4>
+			<p>The bourne shell is the default shell for Unix/Linux. It is hard not to be somewhat familiar with it if not more than that and really be a Linux user. I prefer the bash shell and so am a little more familiar with that shell compared to the bourne shell.
+			</p>
+
+			<h4>HTML/CSS</h4>
+			<p>I'm currently taking a class in HTML/CSS and Web programming. It is a great class and I keep getting more familiar with HTML and CSS because of that class. I look forward to continuing to get better. 
+			</p>
+
+			<h4>Python</h4>
+			<p>I'm mostly self-taught with Python. I've created a Flask App in Python and would like to do a lot more with Python after I complete some other HTML/CSS and Java training.
+			</p>
+
+			<h4>PHP</h4>
+			<p>I setup an AWS "elastic" host and propagated it with an App that uses PHP. I did this as a self-learning task. I need to spend more time with PHP in order to advance to a more proficient level. But I think it was a good start.
+			</p>
+
+			<h4>JavaScript</h4>
+			<p>I'm being exposed to JavaScript as well as HTML and CSS in my Web Applications class. JavaScript is a high priority for additional learning. I'm also getting a chance to learn some BootStrap framework in this class.
+			</p>
+
+			<h4>Ruby</h4>
+			<p>I have done a little bit of Ruby and Ruby on Rails, so not completely a novice. But I need to rate my skill/familiarity of Ruby low at this time. I would not be afraid to dive in to Ruby if the need arose.
+			</p>
+
+
+			<h3>Protocol Familiarity Skills</h3>
 
 			<p>My rating of these is: 
 			</p>
 
 			<div id="protocalsContainer" style="height: 300px; width: 100%;"></div>
+			<br>
+			<br>
 
-			<h2>Platform Familiarity and Skills</h2>
+			<h3>Platform Familiarity and Skills</h3>
 
 			<p>My rating of these is: 
 			</p>
 
-			<div id="platformsContainer" style="height: 300px; width: 100%;"></div>
+			<h4>SCSI</h4>
+			<p>Some years back I invented a SCSI to ESCON driver. It should have resulted in a patent, but the company didn't want to spend the money to fully pursue it. It was unclear if this invention was possibly "known to the trade" and thus not patentable. But no one else had ever done it before. We generated a lot of excitement for a time because of this driver.
+			</p> 
+			<p>It had some bells and whistles that allowed it to mimic the device buffering of data like what a tape or disk controller device is capable of. Thus even though it was designed to be able transmit device commands and data over a network connection between the SCSI target mode device of a user host (Unix) to our remote ESCON device which then connected to the end ESCON tape or disk device controller, it performed at native speed! 
+			</p>
+			<p>That was some years ago and it was one my most memorable projects. I guess that is why I include it here in this portfolio document. 
+			</p>
 
-			<h2>Tools Familiarity and Skills</h2>
+
+			<h4>TCP/IP</h4>
+			<p>One company I worked for needed to add the TCP/IP layers into their network front-end controller host in order to be eligible for a government contract. I ended up writing the IP datagram handling layer. It was a great way to learn what TCP/IP is all about "under the hood".
+			</p>
+
+			<h4>ESCON/Block Mux</h4>
+			<p>This is an area I worked on in several projects over the years. It is pretty much an obsolete hardware architecure. But I mention it mainly as a way to express that I've worked on device drivers at near the lowest level on several systems. Although those systems are no longer used, It was a great teacher of real-time event handling. I appreciate those experiences to this day.
+			</p>
+
+			<div id="platformsContainer" style="height: 300px; width: 100%;"></div>
+			<br>
+			<br>
+
+			<h3>Tools Familiarity and Skills</h3>
 
 			<p>My rating of these is: 
 			</p>
