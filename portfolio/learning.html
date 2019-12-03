@@ -40,7 +40,6 @@
                         	{ label: "Sublime", y: 20 },
                         	{ label: "Vscode", y: 5 },
                             { label: "Eclipse", y: 3 },
-                            { label: "Intellij", y: 2 },
                             { label: "Selenium", y: 1 }
                         ]
                     }]
@@ -61,8 +60,8 @@
 				height="56" width="96">Andrew Roe - My Training plans and progress</h1>
 		</header>
 
-		<nav class="navbar navbar-expand-sm navbar-light bg-light">
-			<button class="navbar-toggler" thpe="button" data-toggle="collapse"
+		<nav class="navbar navbar-expand-sm navbar-light my-nav-color">
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
 				data-target="#navbarSupportedContent"
 				aria-controls="navbarSupportedContent" aria-expanded="false"
 				aria-label="Toggle navigation">
@@ -91,43 +90,61 @@
 
 		
 		<main>
-			<img src="images/justme_cropped.jpg" alt="Me doing Learning">
-			<h2>Learning</h2>	
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-4">
+						<!-- <h2>Skills</h2> -->
+						<p> I believe that particularily in the computer world and maybe in life in general, constant learning is necessary. It should always be a goal, even if not specifically mentioned.
+						</p>
 
-			<p> I believe that particularily in the computer world and maybe in life in general, constant learning is necessary. It should always be a goal, even if not specifically mentioned.
-			</p>
+						<p> I'm dividing my learning goals into 2 catagories; Languages and Tools. For each catagory I'm defining the skill level goal I want to achieve, on a scale of 1 - 100. I'm generally using a goal value of 10 to indicate "novice" level, a value of 25 would be "rookie" level, 50 would be "fair" or reasonably "competent", 75 is "accomplished" level, and a 100 would be "the best in the universe." Basically a 100 is what AI might become. Not what any human can expect to get to.
+						</p>
 
-			<p> I'm dividing my learning skills into 2 catagories; Languages and Tools.
-			</p>
+						<p> Some of my learning goals have already been mentioned in my "skills" page. That is because, I believe I've achieved some level of skill with those. But I'm relisting them here, because they are skills that I want to learn to be better at.
+						<p>
+					</div>
 
-			<h3>Language Skills</h3>
+					<div class="col-sm-8">		
+						<img src="images/justme_cropped.jpg" 
+						alt="Me doing Learning"
+						height="auto" width="600">
+					</div>
+				</div>
 
-			<p>I think it is helpful if I rate my progress and familiarity with each Language skill.
-			</p>
-			<p>Languages Skills chart. </p>
+				<div class="row">
+					<div class="col-sm-4">
+						<h2>Language Skill Goals</h2>
 
-			<div id="languagesContainer" style="height: 300px; width: 100%;"></div>
+							<p>My goals for learning more about certain computer languages are diagramed at right. Remember, this shows the goal, rather than what currently is true.
+							</p>
+						</div>
+
+					<div class="col-sm-8">	
+						<p>Languages Skills chart. </p>
+
+						<div id="languagesContainer" style="height: 300px; width: 100%;"></div>
+					</div>
+				</div>
+				<br>
+
+				<div class="row">
+					<div class="col-sm-4">
+						<h2>Tools Familiarity and Skill Goals</h2>
+
+							<p>My goals for these tools is shown at right.
+							</p>
+					</div> 
+
+					<div class="col-sm-8">
+						<p>Tools Skills chart. </p>
+
+						<div id="toolsContainer" style="height: 300px; width: 100%;"></div>
+					</div>
+				</div>
+
+			</div>
+			
 			<br>
-			<br>
-
-			<h3>Tools Familiarity and Skills</h3>
-
-			<p>My rating of these is: 
-			</p>
-
-			<p>Tools Skills chart. </p>
-
-			<div id="toolsContainer" style="height: 300px; width: 100%;"></div>
-			<br>
-			<br>
-
-			<span class="myname">Andrew Roe</span><br>
-			256 Spring Street<br>
-			Unit 256<br>
-			Saint Paul, MN 55102<br>
-			<br>
-			<a id="mobile" href="tel:651-260-9628">651-260-9628</a>
-			<span id="desktop">651-260-9628</span>
 		</main>
 
 		<footer>
