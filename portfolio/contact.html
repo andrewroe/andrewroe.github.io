@@ -77,6 +77,35 @@
 			<br>
 			<br>
 
+			<h3>Contact Me</h3>
+				<p>
+				Required information is marked with an asterisk (*).
+				<br>
+ 				</p>
+
+				<form method="post" onsubmit="return validateForm();"
+					action="https://webdevbasics.net/scripts/pacific.php">
+
+					<label for="firstName">*First Name: </label>
+						<input type="text" id="firstName" name="firstName" 
+							required="required">
+					<label for="lasttName">*Last Name: </label>
+						<input type="text" id="lastName" name="lastName" 
+						required="required">
+
+					<label for="email">* E-mail: </label>
+						<input type="text" name="email" id="email">
+					<label for="phone">Phone: </label>
+						<input type="tel" name="phone" id="phone">
+
+					Comments: <br>
+						<textarea name="comments" id="comments">Enter comments
+						</textarea>
+
+					<input type="submit" value="Submit" id="mySubmit">
+				</form>
+
+
 			<span class="myname">Andrew Roe</span><br>
 			256 Spring Street<br>
 			Unit 256<br>
@@ -118,7 +147,18 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-		
+
 		<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+		<script>
+			function validateForm() {
+				if (document.forms[0].email.value == "" ) {
+					alert("Please enter an e-mail address.");
+					return false;
+				} // end if
+				return true;
+			} // end function validateForm
+		</script>
+
 	</body>
 </html>
