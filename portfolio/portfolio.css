@@ -55,48 +55,6 @@ h3 {
 	font-family: Georgia, serif;
 	font-size: 1.5em;
 }
-/*
-h4 {
-	color: #000033;
-	font-family: Georgia, serif;
-	font-size: 1.2em;
-}
-*/
-video {
-	margin: 2em;
-	float: right;
-}
-
-dt {
-	font-weight: bold;
-	color: #000033;
-}
-
-table {
-	border: 1px solid #3399cc;
-	margin: 0 auto;
-	width: 90%;
-	border-collapse: collapse;
-}
-td, th {
-	padding: 5px;
-	border: 1px solid #3399cc;
-	text-align: center;
-}
-tr:nth-of-type(even) {
-	background-color: #F5FAFC;
-}
-
-label {
-	float: left;
-	width: 8em;
-	padding-right: 1em;
-}
-input, textarea {
-	margin-bottom: 1em;
-	display: block;
-}
-
 
 .icons .fa{
 	font-size: 5em;
@@ -117,6 +75,21 @@ input, textarea {
 	clear: both;
 }
 
+
+label {
+	float: left;
+	width: 8em;
+	padding-right: 1em;
+}
+input, textarea {
+	margin-bottom: 1em;
+	display: block;
+}
+
+#mobile {
+	display: none;
+}
+
 #mySubmit {
 	display: block;
 	margin-left: 10em;
@@ -124,61 +97,5 @@ input, textarea {
 }
 
 
-#mobile {
-	display: none;
-}
 
-
-@media only screen and (max-width: 1024px){
-	 body{
-		margin:0;
-		padding:0;
-		background-image:none;
-	}
-
-	h1 {
-		margin: 0;
-	}
-
-
-	main {
-		margin-left: 0;
-		padding: 1em;
-		font-size: 90%;
-	}
-
-	footer {
-		margin: 0;
-	}
-
-}
-
-@media only screen and (max-width: 768px){
-	/*Media queries for smartphones go here */
-	main {
-		padding: 0.1em 0.6em 0.1em 0.4em;
-	}
-	#homehero,
-	#yurthero,
-	#trailhero {
-		display: none;
-	}
-
-	h1 {
-		font-size: 1.5em;
-		height: 100%;
-		padding-left: 0.3em;		
-	}
-
-/*	border-bottom: 1px #330000 solid; */
-	footer {
-		padding: 0;
-	}
-	#desktop{
-		display:none;
-	}
-	#mobile{
-		display:inline;
-	}
-}
 
