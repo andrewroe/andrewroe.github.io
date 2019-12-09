@@ -41,7 +41,14 @@
 					<li class="nav-item"><a class="nav-link"
 						href="skills.html">Skills</a></li>
 					<li class="nav-item active"><a class="nav-link"
-						href="learning.html">Learning</a></li>
+						href="learning.html">Learning</a>
+						<!--
+						<ul>
+							<li><a href="#languagegoals">Language Goals</a></li>
+							<li><a href="#toolgoals">Tool Goals</a></li>
+						</ul>
+						-->
+					</li>
 					<li class="nav-item"><a class="nav-link"
 						href="contact.html">Contact</a></li>
 					<li class="nav-item"><a class="nav-link"
@@ -67,6 +74,11 @@
 
 						<p> Some of my learning goals have already been mentioned in my "skills" page. That is because, I believe I've achieved some level of skill with those. But I'm relisting them here, because they are skills that I want to learn to be better at.
 						</p>
+
+						<p>
+							Relative links.
+							
+						</p>
 					</div>
 
 					<div class="col-sm-8">		
@@ -77,7 +89,7 @@
 				</div>
 
 
-				<div class="row">
+				<div class="row" id="languagegoals">
 					<div class="col-sm-4">
 						<h2>Language Skill Goals</h2>
 
@@ -163,7 +175,7 @@
 
 				<hr>
 
-				<div class="row">
+				<div class="row" id="toolgoals">
 					<div class="col-sm-4">
 						<h2>Tools Familiarity and Skill Goals</h2>
 
@@ -296,43 +308,7 @@
 
 		<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
-		<script>
-			window.onload=function() {
-
-				var chart1 = new CanvasJS.Chart("languagesGoal", 
-					{title:{text: "Skills Rating - languages"},
-					data: [{
-						type: "column",
-						dataPoints: [
-							{ label: "HTML/CSS", y: 90 },
-							{ label: "PHP", y: 75 },
-							{ label: "JavaScript", y: 75 },
-							{ label: "Java", y: 75 },
-							{ label: "JSP", y: 75 },
-							{ label: "Python", y: 50 }
-						]
-					}]
-				});
-
-                var chart2 = new CanvasJS.Chart("toolsGoal", 
-                    {title:{text: "Skills Rating - Tools"},
-                    data: [{
-       					type: "column",
-                        dataPoints: [
-                        	{ label: "Sublime", y: 80 },
-                        	{ label: "Vscode", y: 75 },
-                            { label: "Eclipse", y: 75 },
-                            { label: "JSfiddle", y: 50 },
-                            { label: "git", y: 50 },
-                            { label: "Selenium", y: 40 }
-                        ]
-                    }]
-                });
-                            
-			chart1.render();
-			chart2.render();
-			}
-		</script>
+		<script type="text/javascript" src="goalschart.js"></script>
 	
 	</body>
 </html>
