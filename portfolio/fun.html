@@ -9,12 +9,20 @@
 		
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
 
-		<link rel="stylesheet" href="reset.css">		
-		<link href="https://fonts.googleapis.com/css?family=Public+Sans&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-		<line rel="stylesheet" href="slide.css">
-		<link rel="stylesheet" href="portfolio.css">
+		<link rel="stylesheet" 
+			href="reset.css">		
+		<link rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Public+Sans&display=swap">
+		<link rel="stylesheet" 
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" 
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+		<!--
+		<line rel="stylesheet" 
+			href="slide.css">
+		-->
+		<link rel="stylesheet" 
+			href="portfolio.css">
 	</head>
 
 	<body>
@@ -48,10 +56,27 @@
 						href="aboutme.html">About Me</a></li>
 					<li class="nav-item"><a class="nav-link"
 						href="resume.html">Resume</a></li>
-					<li class="nav-item active"><a class="nav-link"
-						href="fun.html">Fun</a>
-						
-					</li>
+
+					<ul class="nav-item active">
+						<li class="nav-item dropdown">	
+						<button type="button" 
+							class="btn btn-primary dropdown-toggle" 
+							data-toggle="dropdown">Fun</button>
+
+							<div class="dropdown-menu" 
+								aria-labelledby="navbarDropdownMenuLink">
+								<a class="dropdown-item"
+									href="fun.html">Fun</a>
+          						<a class="dropdown-item" 
+          							href="#activities">Activities</a>
+          						<a class="dropdown-item" 
+          							href="#travel">Travel</a>
+          						<a class="dropdown-item" 
+          							href="#interesting_facts">Interesting Facts</a>	
+        					</div>
+        				</li>
+					</ul>
+
 				</ul>
 			</div>
 		</nav>
@@ -78,7 +103,7 @@
 			<br>
 			<br>
 			<hr>
-			<h2>Fun Activities</h2>
+			
 
 			<!-- 
 			<p>trying to have a slide show</p>
@@ -134,13 +159,17 @@
 
 			<div class="container-fluid">	
 				<div class="row" id="activities">
-					<div class="col-sm-6">	
+					
+					<div class="col-sm-6">
+					<h2>Fun Activities</h2>	
 						<img src="images/cycling-828646_640.jpg" alt="riding a bike"
 							height="auto" width="400">
 					</div>
 
 					<div class="col-sm-6">
-	
+						<br>
+						<br>
+						
 						<p>Bicycling is a big activity for both of us. This picture reminds me of that feelig of being on a bike and just having fun exploring.
 						</p>
 					</div>
@@ -194,22 +223,36 @@
 					</div>
 				</div>
 
+				<div class="row">
+					<div class="col-sm-6">
+						
+					</div>
+
+					<div class="col-sm-6">
+						<p><a href="fun.html">Back to Top</a></p>
+					</div>
+				</div>	
+
 			</div>
 
 			<br>
 			<br>
 			<hr>
-			<h2>Travel</h2>
+			
 			<div class="container-fluid">	
 				<div class="row" id="travel">
-					<div class="col-sm-6">	
+					
+					<div class="col-sm-6">
+						<h2>Travel</h2>
 						<img src="images/cracker-lake-1733309_640.jpg" 
 							alt="Cracker Lake in Glacier Park"
 							height="auto" width="400">
 					</div>
 
 					<div class="col-sm-6">
-	
+						<br>
+						<br>
+					
 						<p>Our first trip was to Glacier Park. Since then we've done quite a few more and they have all been special, just like that first one.
 						</p>
 					</div>
@@ -242,27 +285,41 @@
 
 					<div class="col-sm-6">
 	
-						<p>I think there are other wonderful places in the world besides Minnesota and Mexico and one of them is Italy. We have been lucky to have visited Europe a few times and most lucky to have included Italy twice. The image at left of Cinque Terre is hardly sufficient to convey how nice it really is.
+						<p>I think there are other wonderful places in the world besides Minnesota and Mexico and one of them is Italy. We have been lucky to have visited Europe a few times and most lucky to have included Italy twice. The image at left of Cinque Terre is hardly sufficient to convey how nice it really is. 
 						</p>
 					</div>
 				</div>
+
+				<div class="row">
+					<div class="col-sm-6">
+						
+					</div>
+
+					<div class="col-sm-6">
+						<p><a href="fun.html">Back to Top</a></p>
+					</div>
+				</div>	
 
 			</div>
 
 			<br>
 			<br>
 			<hr>
-			<h2>Interesting Facts</h2>
-			<div class="container-fluid">	
-				<div class="row" id="intersting_facts">
-					<div class="col-sm-6">	
+			
+			<div class="container-fluid" id="interesting_facts">	
+				<div class="row">
+					
+					<div class="col-sm-6">
+						<h2>Interesting Facts</h2>
 						<img src="images/egypt_eye.jpg" 
 							alt="Egyption Eye"
 							height="auto" width="400">
 					</div>
 
 					<div class="col-sm-6">
-	
+						<br>
+						<br>
+					
 						<p>Sometimes I just want to explore interesting facts. One whole catagory of interest is ancient Egypt. The Pyramids, their gods, their writing. It all seems so exotic. At left seemed like a about the best way for me to capture my facination with ancient Egypt.
 						</p>
 					</div>
@@ -279,10 +336,20 @@
 
 					<div class="col-sm-6">
 	
-						<p>Another interesting thing is the Fibonacci numbers and the whole notion of the Golden ratio. The snail at left is a good example of the Golden ration in nature.
+						<p>Another interesting thing is the Fibonacci numbers and the whole notion of the Golden ratio. The snail at left is a good example of the Golden ration in nature. 
 						</p>
 					</div>
 				</div>
+
+				<div class="row">
+					<div class="col-sm-6">
+						
+					</div>
+
+					<div class="col-sm-6">
+						<p><a href="fun.html">Back to Top</a></p>
+					</div>
+				</div>	
 
 			</div>
 	

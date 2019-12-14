@@ -9,12 +9,16 @@
 
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
 
-		<link rel="stylesheet" href="reset.css">		
-		<link href="https://fonts.googleapis.com/css?family=Public+Sans&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-		<link rel="stylesheet" href="portfolio.css">
-
+		<link rel="stylesheet" 
+			href="reset.css">		
+		<link rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Public+Sans&display=swap">
+		<link rel="stylesheet" 
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" 
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+		<link rel="stylesheet" 
+			href="portfolio.css">
 
 	</head>
 
@@ -41,27 +45,24 @@
 					<li class="nav-item"><a class="nav-link"
 						href="skills.html">Skills</a></li>
 					
-					<li class="nav-item active">
-						<a class="nav-link"
-						href="learning.html">Learning </a>
-						<!--
-						<ul>
-							<li><a href="#languagegoals">Language Goals</a></li>
-							<li><a href="#toolgoals">Tool Goals</a></li>
-						</ul>
-						-->
-					</li>
+					<ul class="nav-item active">
+						<li class="nav-item dropdown">	
+						<button type="button" 
+							class="btn btn-primary dropdown-toggle" 
+							data-toggle="dropdown">Learning</button>
+
+							<div class="dropdown-menu" 
+								aria-labelledby="navbarDropdownMenuLink">
+								<a class="dropdown-item"
+									href="learning.html">Learning</a>
+          						<a class="dropdown-item" 
+          							href="#languagegoals">Language Goals</a>
+          						<a class="dropdown-item" 
+          							href="#toolgoals">Tool Goals</a>
+        					</div>
+        				</li>
+					</ul>
 					
-					<!--
-					<li class="nav-item active"> 
-						<a class="dropdown-toggle" data-toggle="dropdown" 
-						href="learning.html">Learning<span class="caret"></span></a>
-          				<ul class="dropdown-menu">
-            				<li><a href="#languagegoals">Language Goals</a></li>
-            				<li><a href="#toolgoals">Tool Goals</a></li>
-          				</ul>
-        			</li>
-					-->
 					<li class="nav-item"><a class="nav-link"
 						href="contact.html">Contact</a></li>
 					<li class="nav-item"><a class="nav-link"
@@ -107,6 +108,8 @@
 						<h2>Language Skill Goals</h2>
 
 						<p>My goals for learning more about certain computer languages are diagramed at right. Remember, this shows the goal, rather than what currently is true.
+						<br>
+						<a href="learning.html">Back to Top</a>
 						</p>
 					</div>
 
@@ -186,14 +189,25 @@
 					</div>
 				</div>
 
+				<div class="row">
+					<div class="col-sm-4">
+						
+					</div>
+
+					<div class="col-sm-8">
+						<p><a href="learning.html">Back to Top</a></p>
+					</div>
+				</div>		
+
 				<hr>
 
 				<div class="row" id="toolgoals">
 					<div class="col-sm-4">
 						<h2>Tools Familiarity and Skill Goals</h2>
 
-							<p>My goals for these tools is shown at right.
-							</p>
+						<p>My goals for these tools is shown at right.
+						<br><a href="learning.html">Back to Top</a>
+						</p>
 					</div> 
 
 					<div class="col-sm-8">
@@ -274,6 +288,14 @@
 						</p>
 					</div>
 				</div>
+
+				<div class="row">
+					<div class="col-sm-4"></div>
+
+					<div class="col-sm-8">
+						<p><a href="learning.html">Back to Top</a></p>
+					</div
+				</div>	
 
 			</div>
 
