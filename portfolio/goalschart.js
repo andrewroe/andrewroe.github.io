@@ -1,7 +1,7 @@
 window.onload=function() {
 
 	var chart1 = new CanvasJS.Chart("languagesGoal", 
-		{title:{text: "Skills Rating - languages"},
+		{title:{text: "Goals Level - languages"},
 		data: [{
 			type: "column",
 				dataPoints: [
@@ -16,7 +16,7 @@ window.onload=function() {
 		});
 
 	var chart2 = new CanvasJS.Chart("toolsGoal", 
-		{title:{text: "Skills Rating - Tools"},
+		{title:{text: "Goals Level - Tools"},
   		 data: [{
   		 	type: "column",
 				dataPoints: [
