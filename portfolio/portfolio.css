@@ -22,6 +22,14 @@ footer {
 	background-color: LightBlue;
 }
 
+.my_background {
+	background-image: url(images/logo.png);
+	alt="my logo as a background";
+	opacity: 0.3;
+	height: 100px;
+	width: auto;
+}
+
 body {
 	background-color: #FFFFFF;
 	font-family: 'Public Sans', sans-serif;
