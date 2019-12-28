@@ -45,14 +45,16 @@ main {
 	*/
 	margin: 32px;
 }
-
+/*
+	line-height: 100%;
+*/
 h1 {
-	line-height: 200%;
+	font-size: 2em;
 	background-repeat: no-repeat;
 	background-position: right;
 	padding-left: 32px;
 	margin-bottom: 0;
-	height: 72px;
+	height: 56px;
 }
 h2 {
 	color: #3399cc;
