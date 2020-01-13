@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Andrew Roe - Fun Slides</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,
+			initial-scale=1.0">
+		<meta name="description" content="Fun slides for Andrew Roe profile.>
+		
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+		<link rel="stylesheet" 
+			href="reset.css">		
+		<link rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Public+Sans&display=swap">
+		<link rel="stylesheet" 
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" 
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+		
+		<link rel="stylesheet" type="text/css"
+			href="./slide.css">
+		
+		<link rel="stylesheet" 
+			href="portfolio.css">
+	</head>
+
+	<body>
+
+		<header>
+			<h1><img class="img-responsive" src="images/logo.png" 
+				alt="portfolio logo" 
+				height="56" width="96">Andrew Roe - Fun Stuff</h1>
+		</header>
+
+
+		<nav class="navbar navbar-expand-sm navbar-light my-nav-color">
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item"><a class="nav-link"
+						href="index.html">Home</a></li>
+
+					<ul class="nav-item my-nav-color">
+						<li class="nav-item dropdown">	
+						<button type="button" 
+							class="btn dropdown-toggle my-nav-color" 
+							data-toggle="dropdown">Skills</button>
+
+							<div class="dropdown-menu" 
+								aria-labelledby="navbarDropdownMenuLink">
+								<a class="dropdown-item"
+									href="skills.html">Skills</a>
+          						<a class="dropdown-item" 
+          							href="skills.html#languageskills">Language Skills</a>
+          						<a class="dropdown-item" 
+          							href="skills.html#protocalskills">Protocal Skills</a>
+          						<a class="dropdown-item" 
+          							href="skills.html#platformskills">Platform Skills</a>
+          						<a class="dropdown-item" 
+          							href="skills.html#toolskills">Tool Skills</a>
+        					</div>
+        				</li>
+					</ul>
+
+					<ul class="nav-item my-nav-color">
+						<li class="nav-item dropdown">	
+						<button type="button" 
+							class="btn dropdown-toggle my-nav-color" 
+							data-toggle="dropdown">Learning</button>
+
+							<div class="dropdown-menu" 
+								aria-labelledby="navbarDropdownMenuLink">
+								<a class="dropdown-item"
+									href="learning.html">Learning</a>
+          						<a class="dropdown-item" 
+          							href="learning.html#languagegoals">Language Goals</a>
+          						<a class="dropdown-item" 
+          							href="learning.html#toolgoals">Tool Goals</a>
+        					</div>
+        				</li>
+					</ul>
+
+					<li class="nav-item"><a class="nav-link"
+						href="contact.html">Contact</a></li>
+					<li class="nav-item"><a class="nav-link"
+						href="aboutme.html">About Me</a></li>
+					<li class="nav-item"><a class="nav-link"
+						href="resume.html">Resume</a></li>
+
+					<ul class="nav-item active my-nav-color">
+						<li class="nav-item dropdown">	
+						<button type="button" 
+							class="btn dropdown-toggle my-nav-color" 
+							data-toggle="dropdown">Fun</button>
+
+							<div class="dropdown-menu" 
+								aria-labelledby="navbarDropdownMenuLink">
+								<a class="dropdown-item"
+									href="fun.html">Fun</a>
+          						<a class="dropdown-item" 
+          							href="fun.html#activities">Activities</a>
+          						<a class="dropdown-item" 
+          							href="fun.html#travel">Travel</a>
+          						<a class="dropdown-item" 
+          							href="fun.html#interesting_facts">Interesting Facts</a>	
+        					</div>
+        				</li>
+					</ul>
+
+				</ul>
+			</div>
+		</nav>
+
+
+		<div id="fun"></div>
+		
+		<main>
+			
+			<p>The slides here are about fun places to travel.</p>
+
+			<p>You can select an individual slide by clicking on one of the dots or you can cycle through them using the forward and backword arrows at the bottom area of each slide description.</p>
+			<!-- The dots/circles -->
+			<div style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+			</div>
+			 
+			<div class="slideshow-container">
+
+  				<!-- Full-width images with number and caption text
+  				div class="mySlides fade" was removed 
+  				-->
+				<div class="mySlides fade">
+    				<div class="numbertext">1 / 3</div>
+    				<img src="images/cracker-lake-1733309_640.jpg" 
+    					style="width:100%">
+    				<div class="text">Cracker Lake in Glacier Park is a remarkable site. Our first trip was to Glacier Park. Since then we've done quite a few more trips and they have all been special, just like that first one.</div>
+  				</div>
+
+				<div class="mySlides fade">
+    				<div class="numbertext">2 / 3</div>
+    				<img src="images/beach-634041_640.jpg" 
+    					style="width:100%">
+    				<div class="text">We have been to Mexico quite a few times. The beach at Tulum in Quinta Roo, Mexico is as nice of ocean beach as one can imagine. Going to Mexico around the end of winter is very invigorating.</div>
+  				</div>
+
+				<div class="mySlides fade">
+    				<div class="numbertext">3 / 3</div>
+					<img src="images/italy-4093227_640.jpg" 
+						style="width:100%">
+					<div class="text">I think there are other wonderful places in the world besides Minnesota and Mexico and one of them is Italy. We have been lucky to have visited Europe a few times and most lucky to have included Italy twice. The image you see of Cinque Terre is hardly sufficient to convey how nice it really is.</div>
+				</div>
+
+				<!-- Next and previous buttons -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			<br>
+
+			<p>You can use the navigation at the top of this page or if you want to get back to the main fun page - <a href="fun.html">Back to top of Fun page</a></p>
+	
+		</main>
+
+		<footer>
+
+ 			<div class="row icons">
+              <div class="col-sm-4" >
+                  <a href="https:/andrewroe.github.io" target="_blank">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                    <h4>Follow me on github</h4>
+                   </a>
+                </div>
+                <div class="col-sm-4" >
+                  <a href="https://linkedin.com" target="_blank">
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    <h4>Connect on Linked In</h4>
+                   </a>
+                </div>
+                <div class="col-sm-4" >
+                  <a href="mailto:cx5314mw@go.minnstate.edu" target="_blank">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <h4>Email Me</h4>
+                   </a>
+                </div>
+            </div>
+
+
+			&copy;Copyright Andrew L Roe<br>
+
+		</footer>
+		
+		<!--jQuery, Popper, and Bootstrap Javascript files-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+		<script type="text/javascript" src="slide.js"></script>
+
+	</body>
+</html>
